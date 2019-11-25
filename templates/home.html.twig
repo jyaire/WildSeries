@@ -2,4 +2,16 @@
 
 {% block body %}
     <h1>Bienvenue !</h1>
+    {# templates/index.html.twig #}
+    <a href="{{ path('wild_index') }}">
+        Index de tous les programmes.
+    </a>
+    <br>
+    <a href="{{ path('show', { 'slug': "walking-dead" }) }}">
+        The Walkind Dead
+    </a>
+    <br>
+    <a href="{{ path('show_category', { 'categoryName': "Horreur" }) }}">
+        3 dernières séries de la Catégorie Horreur
+    </a>
 {% endblock %}
