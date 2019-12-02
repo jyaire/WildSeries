@@ -5,10 +5,26 @@
 {% block body %}
     <h1>Toutes les séries de la table program : </h1>
     {% for program in programs %}
-        <div>
-            <h2>{{ loop.index }} / {{ program.title }} - Catégorie : {{ program.category.name }}</h2>
-            <p>{{ program.summary }}</p>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <a href="show/{{ program.title }}">
+                    <img src="{{ program.poster }}" class="card-img" alt="{{ program.title }}">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ program.title }}</h5>
+                        <p class="card-text">{{ program.summary }}</p>
+                        <p class="card-text"><small class="text-muted">Catégorie : {{ program.category.name }}</small></p>
+                        <a href="show/walking-dead">
+                            <h5 class="card-title">Découvrir les saisons</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
+        </a>
     {% else %}
         Aucune série trouvée.
     {% endfor %}

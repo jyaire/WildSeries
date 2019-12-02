@@ -1,0 +1,32 @@
+{# templates/wild/show.html.twig #}
+{% extends 'base.html.twig' %}
+{% block title %}{{  season.description }} - {{  program.title }}{% endblock %}
+
+{% block body %}
+
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <a href="show/walking-dead">
+                    <img src="{{ program.poster }}" class="card-img" alt="{{ program.title }}">
+                </a>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="mt-0">{{  program.title }} - {{ season.description }}</h2>
+                    <ul>
+                        {% for episode in episodes %}
+                            <li><a href="/show/episode/{{ episode.id }}">{{ episode.title }}</a></li>
+                        {%  endfor %}
+                    </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="{{ path('wild_index') }}">
+        Retour à l'accueil
+    </a>
+
+{% endblock %}

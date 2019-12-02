@@ -10,7 +10,7 @@ use Doctrine\Migrations\AbstractMigration;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-final class Version20191125105953 extends AbstractMigration
+final class Version20191126103501 extends AbstractMigration
 {
     public function getDescription() : string
     {
@@ -22,9 +22,9 @@ final class Version20191125105953 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('ALTER TABLE program ADD category_id_id INT NOT NULL');
-        $this->addSql('ALTER TABLE program ADD CONSTRAINT FK_92ED77849777D11E FOREIGN KEY (category_id_id) REFERENCES category (id)');
-        $this->addSql('CREATE INDEX IDX_92ED77849777D11E ON program (category_id_id)');
+        $this->addSql('CREATE TABLE season (id INT AUTO_INCREMENT NOT NULL, program_id_id INT NOT NULL, year INT NOT NULL, description LONGTEXT NOT NULL, INDEX IDX_F0E45BA9E12DEDA1 (program_id_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');
+        $this->addSql('ALTER TABLE season ADD CONSTRAINT FK_F0E45BA9E12DEDA1 FOREIGN KEY (program_id_id) REFERENCES program (id)');
+        $this->addSql('ALTER TABLE program DROP category_id_id');
     }
 
     public function down(Schema $schema) : void
@@ -32,8 +32,7 @@ final class Version20191125105953 extends AbstractMigration
         // this down() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('ALTER TABLE program DROP FOREIGN KEY FK_92ED77849777D11E');
-        $this->addSql('DROP INDEX IDX_92ED77849777D11E ON program');
-        $this->addSql('ALTER TABLE program DROP category_id_id');
+        $this->addSql('DROP TABLE season');
+        $this->addSql('ALTER TABLE program ADD category_id_id INT NOT NULL');
     }
 }
