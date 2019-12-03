@@ -132,4 +132,8 @@ class Episode
 
         return $this;
     }
+
+    public function getSeason()
+    {
+    }
 }

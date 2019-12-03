@@ -4,10 +4,22 @@
 
 {% block body %}
 
-    <div class="media">
-        <div class="media-body">
-            <h1 class="mt-0">{{ episode.title }} - Episode n°{{ episode.number }}</h1>
-            <p><{{ episode.synopsis }}/p>
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <a class="mt-0" href="{{ path('show', {'slug': program_title}) }}">
+                    <img src="{{ program.poster }}" class="card-img" alt="{{ program.title }}">
+                </a>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <a class="mt-0" href="{{ path('show', {'slug': program_title}) }}">{{ program.title }}</a> -
+                        <a href = "{{ path('show_season', {'id': season.id}) }}">{{ season.description }}</a></h2>
+                    <p>{{ program.summary }}</p>
+                    <h3 class="mt-0">Episode {{ episode.number }} - {{ episode.title }}</h3>
+                    <p>{{ episode.synopsis }}</p>
+                </div>
+            </div>
         </div>
     </div>
 

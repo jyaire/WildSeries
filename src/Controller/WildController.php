@@ -175,30 +175,22 @@ class WildController extends AbstractController
     /**
      * Getting a season with a id for season
      *
-     * @param string|null $id
+     * @param Episode $episode
      * @return Response
      * @Route("show/episode/{id}", name="show_episode")
      */
-    public function showByEpisode(?string $id):Response
+    public function showEpisode(Episode $episode):Response
     {
-        if (!$id) {
-            throw $this
-                ->createNotFoundException('No slug has been sent to find an episode.');
-        }
-
-        $episode = $this->getDoctrine()
-            ->getManager()
-            ->getRepository(Episode::class)
-            ->findOneBy(['id' => $id]);
-
-        if (!$episode) {
-            throw $this->createNotFoundException(
-                'No episode with id = '.$id.', found.'
-            );
-        }
+        $season = $episode->getSeasonId();
+        $program = $season->getProgramId();
+        $program_title = $program->getTitle();
+        $program_title = strtolower(str_replace(' ', '-', $program_title));
 
         return $this->render('show_episode.html.twig', [
             'episode' => $episode,
+            'program' => $program,
+            'season' => $season,
+            'program_title' => $program_title,
         ]);
     }
 }
