@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a99a0ff0-d67f-4894-b8b5-f14c55d55ec7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ProgramSearchType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/wild/category/add_success.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/wild/category/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/WildController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WildController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Episode.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Episode.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show_episode.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_episode.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/wild/category.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/wild/category.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +50,13 @@
         <item name="wild-series@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="wild-series: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="wild-series@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wild-series: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="category: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -189,20 +201,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/wild/category" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
-      <recent name="$PROJECT_DIR$/templates/Default" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/wild/category" />
+      <recent name="$PROJECT_DIR$/src/Form" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/templates/wild" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/Controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/templates/Default" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -249,7 +262,10 @@
       <workItem from="1575210047232" duration="1418000" />
       <workItem from="1575296017795" duration="8537000" />
       <workItem from="1575359749071" duration="5543000" />
-      <workItem from="1575390232213" duration="2050000" />
+      <workItem from="1575390232213" duration="2688000" />
+      <workItem from="1575393040083" duration="2857000" />
+      <workItem from="1575534689303" duration="15124000" />
+      <workItem from="1575561649566" duration="298000" />
     </task>
     <servers />
   </component>

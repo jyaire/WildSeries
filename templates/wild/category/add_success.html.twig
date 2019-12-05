@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Add a category{% endblock %}
+
+{% block body %}
+    <h2>Ajout d'une catégorie</h2>
+    <p>Merci, la catégorie a été ajoutée !</p>
+    <a href="{{ path('add_category') }}">
+        Retour aux catégories
+    </a>
+{% endblock %}
