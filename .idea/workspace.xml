@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a99a0ff0-d67f-4894-b8b5-f14c55d55ec7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ProgramSearchType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/wild/category/add_success.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/wild/category/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/wild/category.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/wild/category.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -265,7 +259,8 @@
       <workItem from="1575390232213" duration="2688000" />
       <workItem from="1575393040083" duration="2857000" />
       <workItem from="1575534689303" duration="15124000" />
-      <workItem from="1575561649566" duration="298000" />
+      <workItem from="1575561649566" duration="1004000" />
+      <workItem from="1575575536025" duration="2611000" />
     </task>
     <servers />
   </component>
