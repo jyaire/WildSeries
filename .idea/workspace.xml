@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a99a0ff0-d67f-4894-b8b5-f14c55d55ec7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/ActorFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/ProgramFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wild-series.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wild-series.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ProgramType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProgramType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +52,6 @@
         <item name="wild-series@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="wild-series: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="wild-series@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="wild-series: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="program: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -164,6 +167,9 @@
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Tq2hfuR9Xub0I6QOXZlkpMDUtR" />
@@ -177,17 +183,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/wild/category" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/DataFixtures" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/DataFixtures" />
       <recent name="$PROJECT_DIR$/templates/wild/category" />
       <recent name="$PROJECT_DIR$/src/Form" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/templates/wild" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates" />
@@ -246,7 +252,25 @@
       <workItem from="1575619156796" duration="1939000" />
       <workItem from="1575621434700" duration="41000" />
       <workItem from="1575621521427" duration="22000" />
-      <workItem from="1575625234721" duration="9713000" />
+      <workItem from="1575625234721" duration="11143000" />
+      <workItem from="1575811730350" duration="642000" />
+      <workItem from="1575924874661" duration="901000" />
+      <workItem from="1575963646656" duration="1843000" />
+      <workItem from="1575992306769" duration="2095000" />
+      <workItem from="1576008447957" duration="1126000" />
+      <workItem from="1576049820143" duration="885000" />
+      <workItem from="1576072038161" duration="4771000" />
+      <workItem from="1576078434226" duration="996000" />
+      <workItem from="1576079583020" duration="4257000" />
+      <workItem from="1576142493067" duration="876000" />
+      <workItem from="1576144593745" duration="665000" />
+      <workItem from="1576146782727" duration="5756000" />
+      <workItem from="1576164357162" duration="34000" />
+      <workItem from="1576166373201" duration="2699000" />
+      <workItem from="1576179139334" duration="3131000" />
+      <workItem from="1576224432247" duration="3129000" />
+      <workItem from="1576482308111" duration="33000" />
+      <workItem from="1576509938106" duration="2443000" />
     </task>
     <servers />
   </component>
@@ -271,9 +295,42 @@
       <screen x="0" y="27" width="1366" height="700" />
     </state>
     <state x="366" y="105" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1366.700@0.27.1366.700" timestamp="1575621458666" />
-    <state x="339" y="204" key="com.intellij.ide.util.TipDialog" timestamp="1575625237677">
+    <state x="84" y="27" width="476" height="700" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575925277029">
       <screen x="0" y="27" width="1366" height="700" />
     </state>
-    <state x="339" y="204" key="com.intellij.ide.util.TipDialog/0.27.1366.700@0.27.1366.700" timestamp="1575625237677" />
+    <state x="84" y="27" width="476" height="700" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1366.700@0.27.1366.700" timestamp="1575925277029" />
+    <state x="749" y="134" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1576076566524">
+      <screen x="0" y="27" width="1366" height="700" />
+    </state>
+    <state x="749" y="134" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.700@0.27.1366.700" timestamp="1576076566524" />
+    <state x="460" y="120" width="424" height="513" key="FileChooserDialogImpl" timestamp="1575814697973">
+      <screen x="0" y="27" width="1366" height="700" />
+    </state>
+    <state x="460" y="120" width="424" height="513" key="FileChooserDialogImpl/0.27.1366.700@0.27.1366.700" timestamp="1575814697973" />
+    <state width="903" height="138" key="GridCell.Tab.0.bottom" timestamp="1576482333321">
+      <screen x="0" y="27" width="1366" height="700" />
+    </state>
+    <state width="903" height="138" key="GridCell.Tab.0.bottom/0.27.1366.700@0.27.1366.700" timestamp="1576482333321" />
+    <state width="903" height="138" key="GridCell.Tab.0.center" timestamp="1576482333318">
+      <screen x="0" y="27" width="1366" height="700" />
+    </state>
+    <state width="903" height="138" key="GridCell.Tab.0.center/0.27.1366.700@0.27.1366.700" timestamp="1576482333318" />
+    <state width="903" height="138" key="GridCell.Tab.0.left" timestamp="1576482333317">
+      <screen x="0" y="27" width="1366" height="700" />
+    </state>
+    <state width="903" height="138" key="GridCell.Tab.0.left/0.27.1366.700@0.27.1366.700" timestamp="1576482333317" />
+    <state width="903" height="138" key="GridCell.Tab.0.right" timestamp="1576482333320">
+      <screen x="0" y="27" width="1366" height="700" />
+    </state>
+    <state width="903" height="138" key="GridCell.Tab.0.right/0.27.1366.700@0.27.1366.700" timestamp="1576482333320" />
+    <state x="346" y="173" width="663" height="405" key="NewPhpClassDialog" timestamp="1575925168849">
+      <screen x="0" y="27" width="1366" height="700" />
+    </state>
+    <state x="346" y="173" width="663" height="405" key="NewPhpClassDialog/0.27.1366.700@0.27.1366.700" timestamp="1575925168849" />
+    <state x="337" y="203" key="com.intellij.ide.util.TipDialog" timestamp="1576482302360">
+      <screen x="0" y="27" width="1366" height="700" />
+    </state>
+    <state x="339" y="204" key="com.intellij.ide.util.TipDialog/0.27.1366.700/1366.0.1280.1024@0.27.1366.700" timestamp="1576164356316" />
+    <state x="337" y="203" key="com.intellij.ide.util.TipDialog/0.27.1366.700@0.27.1366.700" timestamp="1576482302360" />
   </component>
 </project>
