@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a99a0ff0-d67f-4894-b8b5-f14c55d55ec7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/ActorFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/ProgramFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wild-series.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wild-series.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/Slugify.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ActorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ActorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/EpisodeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EpisodeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProgramController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProgramController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Actor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Actor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Episode.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Episode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Program.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Program.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/actor/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/actor/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/actor/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/actor/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/episode/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/episode/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/episode/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/episode/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/program/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/program/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +54,20 @@
         <item name="wild-series@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="wild-series: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="wild-series@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wild-series: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="episode: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="wild-series@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wild-series: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="program: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -183,7 +199,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/DataFixtures" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../hackaton" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -205,7 +221,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:wild-series@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:wild-series@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4cdd8e4c" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -270,7 +296,17 @@
       <workItem from="1576179139334" duration="3131000" />
       <workItem from="1576224432247" duration="3129000" />
       <workItem from="1576482308111" duration="33000" />
-      <workItem from="1576509938106" duration="2443000" />
+      <workItem from="1576509938106" duration="3801000" />
+      <workItem from="1576567948077" duration="2020000" />
+      <workItem from="1576579425000" duration="613000" />
+      <workItem from="1576703041674" duration="2354000" />
+      <workItem from="1576745826641" duration="29000" />
+      <workItem from="1576766030721" duration="851000" />
+      <workItem from="1577205748792" duration="309000" />
+      <workItem from="1577356088492" duration="5204000" />
+      <workItem from="1577442900960" duration="4078000" />
+      <workItem from="1577626080769" duration="3207000" />
+      <workItem from="1577649795881" duration="8515000" />
     </task>
     <servers />
   </component>
@@ -291,6 +327,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="278" y="37" width="800" height="677" key="#Intentions" timestamp="1576571295129">
+      <screen x="0" y="27" width="1366" height="700" />
+    </state>
+    <state x="278" y="37" width="800" height="677" key="#Intentions/0.27.1366.700@0.27.1366.700" timestamp="1576571295129" />
     <state x="366" y="105" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575621458666">
       <screen x="0" y="27" width="1366" height="700" />
     </state>
@@ -299,14 +339,15 @@
       <screen x="0" y="27" width="1366" height="700" />
     </state>
     <state x="84" y="27" width="476" height="700" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1366.700@0.27.1366.700" timestamp="1575925277029" />
-    <state x="749" y="134" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1576076566524">
-      <screen x="0" y="27" width="1366" height="700" />
+    <state x="2115" y="117" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1577652445359">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="749" y="134" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.700@0.27.1366.700" timestamp="1576076566524" />
-    <state x="460" y="120" width="424" height="513" key="FileChooserDialogImpl" timestamp="1575814697973">
+    <state x="2115" y="117" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1366.0.1366.768/0.27.1366.700@1366.0.1366.768" timestamp="1577652445359" />
+    <state x="460" y="120" width="424" height="513" key="FileChooserDialogImpl" timestamp="1576714470758">
       <screen x="0" y="27" width="1366" height="700" />
     </state>
-    <state x="460" y="120" width="424" height="513" key="FileChooserDialogImpl/0.27.1366.700@0.27.1366.700" timestamp="1575814697973" />
+    <state x="460" y="120" width="424" height="513" key="FileChooserDialogImpl/0.27.1366.700@0.27.1366.700" timestamp="1576714470758" />
     <state width="903" height="138" key="GridCell.Tab.0.bottom" timestamp="1576482333321">
       <screen x="0" y="27" width="1366" height="700" />
     </state>
@@ -323,14 +364,23 @@
       <screen x="0" y="27" width="1366" height="700" />
     </state>
     <state width="903" height="138" key="GridCell.Tab.0.right/0.27.1366.700@0.27.1366.700" timestamp="1576482333320" />
-    <state x="346" y="173" width="663" height="405" key="NewPhpClassDialog" timestamp="1575925168849">
+    <state width="263" height="539" key="HiddenNamespacesPopup" timestamp="1576570777963">
       <screen x="0" y="27" width="1366" height="700" />
     </state>
-    <state x="346" y="173" width="663" height="405" key="NewPhpClassDialog/0.27.1366.700@0.27.1366.700" timestamp="1575925168849" />
-    <state x="337" y="203" key="com.intellij.ide.util.TipDialog" timestamp="1576482302360">
+    <state width="263" height="539" key="HiddenNamespacesPopup/0.27.1366.700@0.27.1366.700" timestamp="1576570777963" />
+    <state x="346" y="173" width="663" height="405" key="NewPhpClassDialog" timestamp="1576570831928">
       <screen x="0" y="27" width="1366" height="700" />
+    </state>
+    <state x="346" y="173" width="663" height="405" key="NewPhpClassDialog/0.27.1366.700@0.27.1366.700" timestamp="1576570831928" />
+    <state x="402" y="27" width="552" height="700" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1576570799776">
+      <screen x="0" y="27" width="1366" height="700" />
+    </state>
+    <state x="402" y="27" width="552" height="700" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.27.1366.700@0.27.1366.700" timestamp="1576570799776" />
+    <state x="1703" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1577649816184">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="204" key="com.intellij.ide.util.TipDialog/0.27.1366.700/1366.0.1280.1024@0.27.1366.700" timestamp="1576164356316" />
-    <state x="337" y="203" key="com.intellij.ide.util.TipDialog/0.27.1366.700@0.27.1366.700" timestamp="1576482302360" />
+    <state x="337" y="203" key="com.intellij.ide.util.TipDialog/0.27.1366.700@0.27.1366.700" timestamp="1577626129108" />
+    <state x="1703" y="193" key="com.intellij.ide.util.TipDialog/1366.0.1366.768/0.27.1366.700@1366.0.1366.768" timestamp="1577649816184" />
   </component>
 </project>
