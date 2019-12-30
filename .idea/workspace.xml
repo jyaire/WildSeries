@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a99a0ff0-d67f-4894-b8b5-f14c55d55ec7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Service/Slugify.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/program/email/notification.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wild-series.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wild-series.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ActorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ActorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/EpisodeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EpisodeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/test/swiftmailer.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProgramController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProgramController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Actor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Actor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Episode.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Episode.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Program.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Program.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/actor/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/actor/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/actor/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/actor/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/episode/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/episode/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/episode/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/episode/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/program/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/program/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +93,6 @@
       <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
       <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
       <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
       <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
@@ -120,7 +121,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/validator" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
       <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
@@ -181,11 +181,13 @@
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
-      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/google-mailer" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Tq2hfuR9Xub0I6QOXZlkpMDUtR" />
@@ -199,21 +201,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../hackaton" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/program/email" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/templates/Default" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/program/email" />
       <recent name="$PROJECT_DIR$/src/DataFixtures" />
       <recent name="$PROJECT_DIR$/templates/wild/category" />
       <recent name="$PROJECT_DIR$/src/Form" />
       <recent name="$PROJECT_DIR$/templates" />
-      <recent name="$PROJECT_DIR$/templates/wild" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
-      <recent name="$PROJECT_DIR$/templates/Default" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -221,17 +223,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:wild-series@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:wild-series@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@4cdd8e4c" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -306,7 +298,9 @@
       <workItem from="1577356088492" duration="5204000" />
       <workItem from="1577442900960" duration="4078000" />
       <workItem from="1577626080769" duration="3207000" />
-      <workItem from="1577649795881" duration="8515000" />
+      <workItem from="1577649795881" duration="9244000" />
+      <workItem from="1577698494281" duration="6214000" />
+      <workItem from="1577726776494" duration="2395000" />
     </task>
     <servers />
   </component>
@@ -348,22 +342,22 @@
       <screen x="0" y="27" width="1366" height="700" />
     </state>
     <state x="460" y="120" width="424" height="513" key="FileChooserDialogImpl/0.27.1366.700@0.27.1366.700" timestamp="1576714470758" />
-    <state width="903" height="138" key="GridCell.Tab.0.bottom" timestamp="1576482333321">
+    <state width="903" height="138" key="GridCell.Tab.0.bottom" timestamp="1577698568357">
       <screen x="0" y="27" width="1366" height="700" />
     </state>
-    <state width="903" height="138" key="GridCell.Tab.0.bottom/0.27.1366.700@0.27.1366.700" timestamp="1576482333321" />
-    <state width="903" height="138" key="GridCell.Tab.0.center" timestamp="1576482333318">
+    <state width="903" height="138" key="GridCell.Tab.0.bottom/0.27.1366.700@0.27.1366.700" timestamp="1577698568357" />
+    <state width="903" height="138" key="GridCell.Tab.0.center" timestamp="1577698568356">
       <screen x="0" y="27" width="1366" height="700" />
     </state>
-    <state width="903" height="138" key="GridCell.Tab.0.center/0.27.1366.700@0.27.1366.700" timestamp="1576482333318" />
-    <state width="903" height="138" key="GridCell.Tab.0.left" timestamp="1576482333317">
+    <state width="903" height="138" key="GridCell.Tab.0.center/0.27.1366.700@0.27.1366.700" timestamp="1577698568356" />
+    <state width="903" height="138" key="GridCell.Tab.0.left" timestamp="1577698568355">
       <screen x="0" y="27" width="1366" height="700" />
     </state>
-    <state width="903" height="138" key="GridCell.Tab.0.left/0.27.1366.700@0.27.1366.700" timestamp="1576482333317" />
-    <state width="903" height="138" key="GridCell.Tab.0.right" timestamp="1576482333320">
+    <state width="903" height="138" key="GridCell.Tab.0.left/0.27.1366.700@0.27.1366.700" timestamp="1577698568355" />
+    <state width="903" height="138" key="GridCell.Tab.0.right" timestamp="1577698568356">
       <screen x="0" y="27" width="1366" height="700" />
     </state>
-    <state width="903" height="138" key="GridCell.Tab.0.right/0.27.1366.700@0.27.1366.700" timestamp="1576482333320" />
+    <state width="903" height="138" key="GridCell.Tab.0.right/0.27.1366.700@0.27.1366.700" timestamp="1577698568356" />
     <state width="263" height="539" key="HiddenNamespacesPopup" timestamp="1576570777963">
       <screen x="0" y="27" width="1366" height="700" />
     </state>
@@ -376,11 +370,11 @@
       <screen x="0" y="27" width="1366" height="700" />
     </state>
     <state x="402" y="27" width="552" height="700" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.27.1366.700@0.27.1366.700" timestamp="1576570799776" />
-    <state x="1703" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1577649816184">
-      <screen x="1366" y="0" width="1366" height="768" />
+    <state x="337" y="203" key="com.intellij.ide.util.TipDialog" timestamp="1577726777800">
+      <screen x="0" y="27" width="1366" height="700" />
     </state>
     <state x="339" y="204" key="com.intellij.ide.util.TipDialog/0.27.1366.700/1366.0.1280.1024@0.27.1366.700" timestamp="1576164356316" />
-    <state x="337" y="203" key="com.intellij.ide.util.TipDialog/0.27.1366.700@0.27.1366.700" timestamp="1577626129108" />
+    <state x="337" y="203" key="com.intellij.ide.util.TipDialog/0.27.1366.700@0.27.1366.700" timestamp="1577726777800" />
     <state x="1703" y="193" key="com.intellij.ide.util.TipDialog/1366.0.1366.768/0.27.1366.700@1366.0.1366.768" timestamp="1577649816184" />
   </component>
 </project>

@@ -5,6 +5,10 @@ $theme-colors: (
         "lightblue": #C4FFF9,
 );
 
+img {
+    max-height: 200px;
+}
+
 // the ~ allows you to reference things in node_modules
 @import "~bootstrap/scss/bootstrap";
 

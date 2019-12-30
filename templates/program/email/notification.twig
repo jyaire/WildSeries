@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvelle série ajoutée !{% endblock %}
+
+{% block body %}
+    <h1>Nouvelle série ajoutée !</h1>
+    <p>Une nouvelle série a été ajoutée sur votre site préféré WildSeries !<br>
+    Voici le détail de cette série :</p>
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ program.id }}</td>
+        </tr>
+        <tr>
+            <th>Title</th>
+            <td>{{ program.title }}</td>
+        </tr>
+        <tr>
+            <th>Summary</th>
+            <td>{{ program.summary }}</td>
+        </tr>
+        <tr>
+            <th>Poster</th>
+            <td><img src="{{ program.poster }}"></td>
+        </tr>
+        <tr>
+            <th>Slug</th>
+            <td>{{ program.slug }}</td>
+        </tr>
+        <tr>
+            <th>Acteur(s)</th>
+            <td> <ul>
+                    {% for actor in program.actors %}
+                        <li><a href="{{ path('actor_show', {'slug' : actor.slug}) }}">{{ actor.name }}</a></li>
+                    {% else %}
+                        <li>Aucun acteur pour cette série</li>
+                    {% endfor %}
+                </ul></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a href="http://127.0.0.1:8000/program/{{ program.slug}}">Accéder à cette série</a>
+{% endblock %}
